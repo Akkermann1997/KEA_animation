@@ -1,0 +1,104 @@
+#game_background {
+    background-image: url("Baggrundvandret.svg");
+    background-size: cover;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    position: absolute;
+}
+
+#Rolf {
+    background-image: url("Rolf.svg");
+    background-size: cover;
+    width: 15vw;
+    height: 24vw;
+    margin: auto;
+    position: absolute;
+    top: 18vw;
+    left: 17vw;
+    z-index: 1;
+}
+
+#Bedstemor {
+    background-image: url("Bedstemor.svg");
+    background-size: cover;
+    width: 8vw;
+    height: 10vw;
+    margin: auto;
+    position: absolute;
+    top: 18vw;
+    left: 51vw;
+    z-index: 2;
+}
+
+#Tyv {
+    background-image: url(Tyv.svg);
+    background-size: cover;
+    width: 9vw;
+    height: 10vw;
+    margin: auto;
+    position: absolute;
+    top: 3vw;
+    left: 68vw;
+    z-index: 3;
+}
+
+#Point1 {
+    background-image: url(Point1.svg);
+    background-size: cover;
+    width: 5vw;
+    height: 5vw;
+    margin: auto;
+    position: absolute;
+    top: 39.8vw;
+    left: 65.5vw;
+    z-index: 4;
+}
+
+#Point5 {
+    background-image: url(Point5.svg);
+    background-size: cover;
+    width: 5vw;
+    height: 5vw;
+    margin: auto;
+    position: absolute;
+    top: 40.4vw;
+    left: 63.5vw;
+    z-index: 4;
+}
+
+#Ur {
+    background-image: url(Ur.svg);
+    background-size: cover;
+    width: 20vw;
+    height: 6vw;
+    margin: auto;
+    position: absolute;
+    top: -1.6vw;
+    left: 63.9vw;
+
+}
+
+#Smadretrude {
+    background-image: url(Smadretrude.svg);
+    background-size: cover;
+    width: 6vw;
+    height: 6vw;
+    margin: auto;
+    position: absolute;
+    top: 4vw;
+    left: 61.5vw;
+
+}
+
+#Mistetliv {
+    background-image: url(Mistetliv.svg);
+    background-size: cover;
+    width: 3vw;
+    height: 3vw;
+    margin: auto;
+    position: absolute;
+    top: 41.6vw;
+    left: 71.3vw;
+    z-index: 4;
+}
