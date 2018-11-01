@@ -1,5 +1,23 @@
-#game_background {
-    background-image: url("Baggrundvandret.svg");
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#menu_background {
+    background-image: url("Startvandret.svg");
     background-size: cover;
     width: 100vw;
     height: 56.25vw;
@@ -7,7 +25,46 @@
     position: relative;
 }
 
-#Rolf {
+#game_background {
+    background-image: url("Baggrundvandret.svg");
+    background-size: contain;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+}
+
+#start {
+    background: url(Startvandret.svg);
+    background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0vw;
+    z-index: 1;
+}
+
+#gameover {
+    background-image: url("Slutlodretlose.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+}
+
+#levelcomplete {
+    background-image: url("Slutvandretwin.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+}
+
+#rolf {
     background-image: url("Rolf.svg");
     background-size: cover;
     width: 17vw;
@@ -19,7 +76,7 @@
     z-index: 1;
 }
 
-#Bedstemor {
+#bedstemor {
     background-image: url("Bedstemor.svg");
     background-size: cover;
     width: 9vw;
@@ -31,7 +88,7 @@
     z-index: 2;
 }
 
-#Tyv {
+#tyv {
     background-image: url(Tyv.svg);
     background-size: cover;
     width: 10vw;
@@ -43,7 +100,7 @@
     z-index: 3;
 }
 
-#Point1 {
+#point1 {
     background-image: url(Point1.svg);
     background-size: cover;
     width: 5vw;
@@ -55,7 +112,7 @@
     z-index: 4;
 }
 
-#Point5 {
+#point5 {
     background-image: url(Point5.svg);
     background-size: cover;
     width: 5vw;
@@ -67,7 +124,7 @@
     z-index: 4;
 }
 
-#Ur {
+#ur {
     background-image: url(Ur.svg);
     background-size: cover;
     width: 20vw;
@@ -79,7 +136,7 @@
 
 }
 
-#Smadretrude {
+#smadretrude {
     background-image: url(Smadretrude.svg);
     background-size: cover;
     width: 6vw;
@@ -91,7 +148,7 @@
 
 }
 
-#Mistetliv {
+#mistetliv {
     background-image: url(Mistetliv.svg);
     background-size: cover;
     width: 3vw;
@@ -101,4 +158,64 @@
     top: 52vw;
     left: 89.3vw;
     z-index: 4;
+}
+
+#play {
+    position: absolute;
+    background-image: url("Startknap.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20vw;
+    height: 10vw;
+    top: 38vw;
+    left: 38vw;
+    z-index: 1;
+}
+
+#sound {
+    position: absolute;
+    background-image: url("Sound.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10vw;
+    height: 10vw;
+    top: 45vw;
+    left: 43vw;
+    z-index: 1;
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }

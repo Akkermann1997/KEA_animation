@@ -13,29 +13,34 @@
 
     <div id="screen">
 
-        <div id="menu_background"></div>
+        <div id="menu_background" class="hide"></div>
         <div id="game">
-            <div id="game_background"></div>
-
-            <div id="game_elements">
-                <div id="Rolf" class="kast"></div>
-                <div id="Bedstemor" class="ramt_forsvind"></div>
-                <div id="Tyv" class="ramt_forsvind"></div>
-                <div id="Smadretrude" class="ramt_forsvind"></div>
+            <div id="game_background">
+                <div id="score"></div>
 
             </div>
 
-            <div id="game_ui">
-                <div id="Point1" class="ramt"></div>
-                <div id="Point5" class="ramt_5"></div>
-                <div id="Mistetliv" class="ramt_bedstemor"></div>
-                <div id="Ur" class="nedtælling"></div>
+            <div id="game_elements" class="hid">
+                <div id="rolf" class="kast"></div>
+                <div id="bedstemor" class="ramt_forsvind"></div>
+                <div id="tyv" class="ramt_forsvind"></div>
+                <div id="smadretrude" class="ramt_forsvind"></div>
+
+            </div>
+
+            <div id="game_ui" class="hide">
+                <div id="point1"></div>
+                <div id="point5"></div>
+                <div id="mistetliv"></div>
+                <div id="ur"></div>
             </div>
         </div>
-        <div id="Play"></div>
-        <div id="Sound" class="mute"></div>
-        <div id="Slutlodretlose" class="tabt"></div>
-        <div id="Slutandretwin" class="vundet"></div>
+        <div id="start" class="hide">
+            <div id="play"></div>
+            <div id="sound"></div>
+            <div id="gameover" class="hide"></div>
+            <div id="levelcomplete" class="hide"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 
